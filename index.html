@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Almada</title>
+
+    <!-- Importa o CSS externo com configurações genéricas para todas as páginas  -->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!-- Ícone que aparece na aba do navegador de todas as páginas-->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    
+    <style>
+        /* Layout principal */
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px;
+            gap: 30px; 
+            text-align: left;
+        }
+    
+        main > img {
+            width: 250px;
+            height: auto;
+            border-radius: 50%; /* Deixa a imagem redonda */
+            margin: 80px 50px;    
+        }
+
+        p {
+            color: white;
+            text-indent: 0px;
+            padding-bottom: 20px;
+        }
+    
+        /* Por escolha de design, alinha o texto à esquerda no container da direita */
+        div.right p {
+            text-align: left;
+        }
+    
+        div.left h1 {
+            text-align: right;
+            color: white;
+        }
+
+        hr.linha {
+            border: none;
+            height: 2px;
+            background-color: #AB89F5;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Link na logo para voltar à página inicial sem precisar clicar no botão do navegador -->
+        <a href="index.html"><img src="imagens/logotipo.png" alt="Logotipo do site Sara Almada"></a>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="formacao.html">Formação acadêmica</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <h1>Eu sou a <br> Sara Almada</h1>
+            <!-- Linha decorativa -->
+            <hr class="linha">
+        </div>
+
+        <img src="imagens/fotosara.png" alt="Foto da Sara">
+
+        <div class="right">
+            <p>Estudante do curso de <br> Análise e Desenvolvimento de Sistemas.</p>
+            <p>Fiz esse site para a Atividade Prática da <br> disciplina de Fundamentos da Programação Web. </p>
+            <hr class="linha">
+        </div>
+    </main>
+</body>
+</html>

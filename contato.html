@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Almada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+    <!-- Importa os ícones da biblioteca Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 200px;
+        }
+        
+        section.contato {
+            padding: 50px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            gap: 60px;
+            margin-top: 60px;
+            font-size: 20px;
+        }
+
+        div > a {
+            color: #AB89F5;
+        }
+
+        div > a:hover {
+            color: white;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h2 {
+            margin: 20px;
+        }
+
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #00000033;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 15px;
+            background-color: #AB89F5;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        form button:hover {
+            border: 1px solid #162947;
+            color: #162947;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="imagens/logotipo.png" alt="Logotipo do site Sara Almada"></a>
+        <nav>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="formacao.html">Formação acadêmica</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>CONTATO</h1>
+        <section class="contato">
+            <div>
+                <!-- Links das redes sociais com seus respectivos ícones do site Font Awesome -->
+                <a href="https://linkedin.com/in/saraalmada" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> LinkedIn</a>
+                <a href="https://github.com/saraalmada" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i> GitHub</a>
+                <a href="mailto:saraalmada.contato@gmail.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> E-mail: <br> saraalmada.contato@gmail.com</a>
+            </div>
+            
+            <form action="https://formsubmit.co/saraalmada.contato@gmail.com" method="POST">
+                <h2>Deixe sua Mensagem</h2>
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+
+                <!-- Redireciona para a página obrigada.html após o envio -->
+                <input type="hidden" name="_next" value="https://github.com/saraalmada/projeto-cordel">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Almada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    
+    <style>
+        section {
+            text-align: center;
+        }
+
+        div {
+            background-color: #162947;
+            padding: 10px;
+
+            max-width: 800px; /* Largura máxima do bloco para ficar responsivo */
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        div.projetos {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 32px;
+        }
+
+        div.card {
+            padding: 16px;
+            width: 300px;
+        }
+        
+        div.card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+        div a {
+            color: white;
+        }
+        
+        div a:hover {
+            color: #AB89F5;
+        }
+        
+        a.botao {
+            display: inline-block;
+            background-color: #AB89F5;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: #162947;
+            text-decoration: none;
+        }
+
+        a.botao:hover {
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="imagens/logotipo.png" alt="LLogotipo do site Sara Almada"></a>
+        <nav>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="formacao.html">Formação acadêmica</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <h1>PORTFÓLIO</h1>
+        <section>
+            <div class="projetos">
+                <div class="card">
+                    <a href="https://saraalmada.github.io/projeto-social/" class="botao" target="_blank">Acessar site</a>
+                    <a href="https://saraalmada.github.io/projeto-social/" target="_blank"><img src="imagens/celular.png" alt="Imagem do site de redes sociais no celular"></a>
+                    <a href="https://github.com/saraalmada/projeto-social" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://saraalmada.github.io/projeto-cordel/" class="botao" target="_blank">Acessar site</a>
+                    <a href="https://saraalmada.github.io/projeto-cordel/" target="_blank"><img src="imagens/cordel.png" alt="Imagem do site Cordel Moderno"></a>
+                    <a href="https://github.com/saraalmada/projeto-cordel" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/powerbi.jpeg" alt="Imagem de um projeto em Power BI">
+                </div>
+            </div>
+
+            <div>
+                <a href="https://github.com/saraalmada" target="_blank">Acompanhe mais no meu GitHub</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
