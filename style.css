@@ -46,6 +46,7 @@ header > nav > a:hover {
 main {
     z-index: 1; /* Para o main ficar por cima, pois em alguns navegadores estavam aparecendo widgets de extensões do navegador */
     position: relative;
+    margin: 0 auto;
 }
 
 h1 {
