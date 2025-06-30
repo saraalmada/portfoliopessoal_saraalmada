@@ -4,12 +4,15 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 html, body {
     background-color: #162947;
     color: white;
     font-size: 1em;
+    position: relative; 
+    overflow-x: hidden; /* Evita scrolls horizontais indesejados */
 }
 
 header {
@@ -38,6 +41,11 @@ header > nav > a {
 
 header > nav > a:hover {
     color: #AB89F5;
+}
+
+main {
+    z-index: 1; /* Para o main ficar por cima, pois em alguns navegadores estavam aparecendo widgets de extensões do navegador */
+    position: relative;
 }
 
 h1 {
